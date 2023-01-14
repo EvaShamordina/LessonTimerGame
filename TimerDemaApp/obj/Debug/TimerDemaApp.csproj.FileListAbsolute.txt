@@ -1,0 +1,11 @@
+C:\Users\PC\source\repos\LessonTimerGame\TimerDemaApp\bin\Debug\TimerDemaApp.exe.config
+C:\Users\PC\source\repos\LessonTimerGame\TimerDemaApp\bin\Debug\TimerDemaApp.exe
+C:\Users\PC\source\repos\LessonTimerGame\TimerDemaApp\bin\Debug\TimerDemaApp.pdb
+C:\Users\PC\source\repos\LessonTimerGame\TimerDemaApp\obj\Debug\TimerDemaApp.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\LessonTimerGame\TimerDemaApp\obj\Debug\TimerDemaApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC\source\repos\LessonTimerGame\TimerDemaApp\obj\Debug\TimerDemaApp.Form1.resources
+C:\Users\PC\source\repos\LessonTimerGame\TimerDemaApp\obj\Debug\TimerDemaApp.Properties.Resources.resources
+C:\Users\PC\source\repos\LessonTimerGame\TimerDemaApp\obj\Debug\TimerDemaApp.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\LessonTimerGame\TimerDemaApp\obj\Debug\TimerDemaApp.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\LessonTimerGame\TimerDemaApp\obj\Debug\TimerDemaApp.exe
+C:\Users\PC\source\repos\LessonTimerGame\TimerDemaApp\obj\Debug\TimerDemaApp.pdb

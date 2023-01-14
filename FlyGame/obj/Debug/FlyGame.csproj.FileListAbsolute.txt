@@ -1,0 +1,11 @@
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\bin\Debug\FlyGame.exe.config
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\bin\Debug\FlyGame.exe
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\bin\Debug\FlyGame.pdb
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\obj\Debug\FlyGame.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\obj\Debug\FlyGame.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\obj\Debug\FlyGame.Form1.resources
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\obj\Debug\FlyGame.Properties.Resources.resources
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\obj\Debug\FlyGame.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\obj\Debug\FlyGame.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\obj\Debug\FlyGame.exe
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\obj\Debug\FlyGame.pdb
