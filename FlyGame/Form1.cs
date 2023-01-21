@@ -36,7 +36,7 @@ namespace FlyGame
                     timer = 15;
                     timer--;
                     labelTimer.Text = "Timer: " + timer.ToString();
-                    buttonFly.Enabled = true;
+                    pictureBox1.Enabled = true;
                     score++;
                     labelScore.Text = "Score: " + score.ToString();
                 }
@@ -45,11 +45,11 @@ namespace FlyGame
             
             #region Move Fly
             Random r = new Random();
-            int x = r.Next(0, 500 - buttonFly.Width - 20);
-            int y = r.Next(0, 500 - buttonFly.Top - 20);
+            int x = r.Next(0, 500 - pictureBox1.Width - 20);
+            int y = r.Next(0, 500 - pictureBox1.Top - 20);
 
-            buttonFly.Left = x;
-            buttonFly.Top = y;
+            pictureBox1.Left = x;
+            pictureBox1.Top = y;
 
             #endregion
 
@@ -67,7 +67,7 @@ namespace FlyGame
             if(timer == 0)
             {
                 timerGame.Enabled = false;
-                buttonFly.Enabled = false;
+                pictureBox1.Enabled = false;
                 if(score < 14)
                 {
                     MessageBox.Show("Bad");
@@ -89,7 +89,7 @@ namespace FlyGame
             #region Move play
             buttonPlay.Visible = false;
             labelRecorde.Visible = false;
-            buttonFly.Visible = true;
+            pictureBox1.Visible = true;
             labelScore.Visible = true;
             labelTimer.Visible = true;
             label1.Visible = false;
@@ -97,7 +97,7 @@ namespace FlyGame
             buttonMENU.Visible = true;
             #endregion
             timerGame.Enabled = true;
-            buttonFly.Enabled = true;
+            pictureBox1.Enabled = true;
         }
 
         private void buttonAnew_Click(object sender, EventArgs e)
@@ -109,7 +109,7 @@ namespace FlyGame
         {
             timerGame.Stop();
             buttonEXTEND.Visible = true;
-            buttonFly.Visible = false;
+            pictureBox1.Visible = false;
             labelScore.Visible = false;
             labelTimer.Visible = false;
             buttonStop.Visible = false;
@@ -122,7 +122,7 @@ namespace FlyGame
             #region Move play
             buttonPlay.Visible = true;
             labelRecorde.Visible = true;
-            buttonFly.Visible = false;
+            pictureBox1.Visible = false;
             labelScore.Visible = false;
             labelTimer.Visible = false;
             buttonStop.Visible = false;
@@ -148,7 +148,7 @@ namespace FlyGame
             #region Move play
             buttonPlay.Visible = false;
             labelRecorde.Visible = false;
-            buttonFly.Visible = true;
+            pictureBox1.Visible = true;
             labelScore.Visible = true;
             labelTimer.Visible = true;
             buttonStop.Visible = true;
@@ -166,6 +166,41 @@ namespace FlyGame
         private void labelRecorde_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (isRunning == false)
+            {
+                timerGame.Enabled = true;
+                isRunning = true;
+                timerGame.Start();
+                if (score == 1)
+                {
+                    timerGame.Enabled = true;
+                    timer = 15;
+                    timer--;
+                    labelTimer.Text = "Timer: " + timer.ToString();
+                    pictureBox1.Enabled = true;
+                    score++;
+                    labelScore.Text = "Score: " + score.ToString();
+                }
+            }
+
+
+            #region Move Fly
+            Random r = new Random();
+            int x = r.Next(0, 500 - pictureBox1.Width - 20);
+            int y = r.Next(0, 500 - pictureBox1.Top - 20);
+
+            pictureBox1.Left = x;
+            pictureBox1.Top = y;
+
+            #endregion
+
+            score++;
+
+            labelScore.Text = "Score: " + score.ToString();
         }
     } 
 }

@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.buttonFly = new System.Windows.Forms.Button();
             this.timerGame = new System.Windows.Forms.Timer(this.components);
             this.labelScore = new System.Windows.Forms.Label();
             this.labelTimer = new System.Windows.Forms.Label();
@@ -40,19 +39,9 @@
             this.buttonMENU = new System.Windows.Forms.Button();
             this.buttonEXTEND = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // buttonFly
-            // 
-            this.buttonFly.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonFly.BackgroundImage")));
-            this.buttonFly.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonFly.Location = new System.Drawing.Point(198, 163);
-            this.buttonFly.Name = "buttonFly";
-            this.buttonFly.Size = new System.Drawing.Size(77, 79);
-            this.buttonFly.TabIndex = 0;
-            this.buttonFly.UseVisualStyleBackColor = true;
-            this.buttonFly.Visible = false;
-            this.buttonFly.Click += new System.EventHandler(this.buttonFly_Click);
             // 
             // timerGame
             // 
@@ -81,7 +70,7 @@
             // 
             // buttonPlay
             // 
-            this.buttonPlay.Location = new System.Drawing.Point(184, 163);
+            this.buttonPlay.Location = new System.Drawing.Point(169, 147);
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(107, 79);
             this.buttonPlay.TabIndex = 3;
@@ -123,7 +112,7 @@
             // 
             // buttonEXTEND
             // 
-            this.buttonEXTEND.Location = new System.Drawing.Point(138, 156);
+            this.buttonEXTEND.Location = new System.Drawing.Point(135, 140);
             this.buttonEXTEND.Name = "buttonEXTEND";
             this.buttonEXTEND.Size = new System.Drawing.Size(177, 92);
             this.buttonEXTEND.TabIndex = 8;
@@ -141,6 +130,19 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "НАЖМИ НА МУХУ ЧТОБЫ СОБРАТЬ МАКСИМАЛЬНОЕ КОЛИЧЕСТВО ОЧКОВ";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Enabled = false;
+            this.pictureBox1.Image = global::FlyGame.Properties.Resources.theplan_001;
+            this.pictureBox1.Location = new System.Drawing.Point(176, 164);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,6 +150,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonEXTEND);
             this.Controls.Add(this.buttonMENU);
@@ -156,18 +159,16 @@
             this.Controls.Add(this.buttonPlay);
             this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.labelScore);
-            this.Controls.Add(this.buttonFly);
             this.Name = "Form1";
             this.Text = "FlyGame";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonFly;
         private System.Windows.Forms.Timer timerGame;
         private System.Windows.Forms.Label labelScore;
         private System.Windows.Forms.Label labelTimer;
@@ -177,6 +178,7 @@
         private System.Windows.Forms.Button buttonMENU;
         private System.Windows.Forms.Button buttonEXTEND;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

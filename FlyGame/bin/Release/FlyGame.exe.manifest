@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FlyGame.exe" size="648656">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FlyGame.exe" size="664528">
       <assemblyIdentity name="FlyGame" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>P/zGB5QLiPfw0GnTV/Hki/ifcYSM94IOOd65NkmMcec=</dsig:DigestValue>
+        <dsig:DigestValue>MztcWdmxBZcAASofns4XmkQZOD6y5GEi8ILNj4YurCs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
