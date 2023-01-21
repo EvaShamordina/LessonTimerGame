@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FlyGame.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,8 @@ namespace FlyGame
     {
         // глобальные переменные
         int score = 0;
-        int timer = 10;
+        int timer = 15;
+        int recorde = 0;
         bool isRunning = false;
         public Form1()
         {
@@ -27,6 +29,17 @@ namespace FlyGame
             {
                timerGame.Enabled = true;
                 isRunning = true;
+                timerGame.Start();
+                if (score == 1)
+                {
+                    timerGame.Enabled = true;
+                    timer = 15;
+                    timer--;
+                    labelTimer.Text = "Timer: " + timer.ToString();
+                    buttonFly.Enabled = true;
+                    score++;
+                    labelScore.Text = "Score: " + score.ToString();
+                }
             }
             
             
@@ -55,11 +68,11 @@ namespace FlyGame
             {
                 timerGame.Enabled = false;
                 buttonFly.Enabled = false;
-                if(score < 10)
+                if(score < 14)
                 {
                     MessageBox.Show("Bad");
                 }
-                else if(score < 14 )
+                else if(score < 18)
                 {
                     MessageBox.Show("Normal");
                 }
@@ -67,7 +80,92 @@ namespace FlyGame
                 {
                     MessageBox.Show("Good");
                 }
+                
             }
+        }
+
+        private void buttonPlay_Click(object sender, EventArgs e)
+        {
+            #region Move play
+            buttonPlay.Visible = false;
+            labelRecorde.Visible = false;
+            buttonFly.Visible = true;
+            labelScore.Visible = true;
+            labelTimer.Visible = true;
+            label1.Visible = false;
+            buttonStop.Visible = true;
+            buttonMENU.Visible = true;
+            #endregion
+            timerGame.Enabled = true;
+            buttonFly.Enabled = true;
+        }
+
+        private void buttonAnew_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonMenu_Click(object sender, EventArgs e)
+        {
+            timerGame.Stop();
+            buttonEXTEND.Visible = true;
+            buttonFly.Visible = false;
+            labelScore.Visible = false;
+            labelTimer.Visible = false;
+            buttonStop.Visible = false;
+            buttonMENU.Visible = false;
+
+        }
+
+        private void buttonMENU_Click_1(object sender, EventArgs e)
+        {
+            #region Move play
+            buttonPlay.Visible = true;
+            labelRecorde.Visible = true;
+            buttonFly.Visible = false;
+            labelScore.Visible = false;
+            labelTimer.Visible = false;
+            buttonStop.Visible = false;
+            buttonMENU.Visible = false;
+            label1.Visible = true;
+            #endregion
+            if (score > recorde)
+            {
+                recorde = score;
+                labelRecorde.Text = "Рекорд: " + recorde.ToString();
+            }
+            score = 0;
+            labelScore.Text = "Score: " + score.ToString();
+            timer = 15;
+            labelTimer.Text = "Timer: " + timer.ToString();
+            
+
+
+        }
+
+        private void buttonEXTEND_Click(object sender, EventArgs e)
+        {
+            #region Move play
+            buttonPlay.Visible = false;
+            labelRecorde.Visible = false;
+            buttonFly.Visible = true;
+            labelScore.Visible = true;
+            labelTimer.Visible = true;
+            buttonStop.Visible = true;
+            buttonMENU.Visible = true;
+            buttonEXTEND.Visible = false;
+            #endregion
+            timerGame.Start();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelRecorde_Click(object sender, EventArgs e)
+        {
+           
         }
     } 
 }

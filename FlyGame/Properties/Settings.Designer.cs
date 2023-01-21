@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System;
+
 namespace FlyGame.Properties
 {
 
@@ -25,6 +27,11 @@ namespace FlyGame.Properties
             {
                 return defaultInstance;
             }
+        }
+
+        internal static void Reset(string text)
+        {
+            throw new NotImplementedException();
         }
     }
 }

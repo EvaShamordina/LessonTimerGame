@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerDemaApp", "TimerDemaAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyGame", "FlyGame\FlyGame.csproj", "{514CA836-DD2D-497E-B9CE-EBFB074E5BBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeedGame", "SpeedGame\SpeedGame.csproj", "{640C5B9A-B9BA-4C5D-A7B4-52AE11EDC005}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,12 +17,15 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DE5697D8-0511-4329-8EE9-03BDDE94CE52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DE5697D8-0511-4329-8EE9-03BDDE94CE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE5697D8-0511-4329-8EE9-03BDDE94CE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE5697D8-0511-4329-8EE9-03BDDE94CE52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE5697D8-0511-4329-8EE9-03BDDE94CE52}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{514CA836-DD2D-497E-B9CE-EBFB074E5BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{514CA836-DD2D-497E-B9CE-EBFB074E5BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{514CA836-DD2D-497E-B9CE-EBFB074E5BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{514CA836-DD2D-497E-B9CE-EBFB074E5BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{640C5B9A-B9BA-4C5D-A7B4-52AE11EDC005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640C5B9A-B9BA-4C5D-A7B4-52AE11EDC005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640C5B9A-B9BA-4C5D-A7B4-52AE11EDC005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640C5B9A-B9BA-4C5D-A7B4-52AE11EDC005}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

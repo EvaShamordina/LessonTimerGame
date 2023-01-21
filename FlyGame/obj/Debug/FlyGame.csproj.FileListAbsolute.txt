@@ -9,3 +9,7 @@ C:\Users\PC\source\repos\LessonTimerGame\FlyGame\obj\Debug\FlyGame.csproj.Genera
 C:\Users\PC\source\repos\LessonTimerGame\FlyGame\obj\Debug\FlyGame.csproj.CoreCompileInputs.cache
 C:\Users\PC\source\repos\LessonTimerGame\FlyGame\obj\Debug\FlyGame.exe
 C:\Users\PC\source\repos\LessonTimerGame\FlyGame\obj\Debug\FlyGame.pdb
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\bin\Debug\FlyGame.exe.manifest
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\bin\Debug\FlyGame.application
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\obj\Debug\FlyGame.exe.manifest
+C:\Users\PC\source\repos\LessonTimerGame\FlyGame\obj\Debug\FlyGame.application
